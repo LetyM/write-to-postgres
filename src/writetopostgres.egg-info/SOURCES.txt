@@ -1,8 +1,0 @@
-pyproject.toml
-src/writetopostgres/__init__.py
-src/writetopostgres/utils.py
-src/writetopostgres/write_csv_to_postgres.py
-src/writetopostgres.egg-info/PKG-INFO
-src/writetopostgres.egg-info/SOURCES.txt
-src/writetopostgres.egg-info/dependency_links.txt
-src/writetopostgres.egg-info/top_level.txt

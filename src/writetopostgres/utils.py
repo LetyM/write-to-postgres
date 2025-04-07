@@ -4,7 +4,7 @@ import traceback
 import logging
 from dotenv import load_dotenv
 
-load_dotenv('/home/lety/Git/write-to-postgres/.venv/.env')
+load_dotenv('/home/lety/Git/writetopostgres/env/.env')
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s:%(funcName)s:%(levelname)s:%(message)s')

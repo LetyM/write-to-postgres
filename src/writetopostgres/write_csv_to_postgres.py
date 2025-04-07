@@ -2,7 +2,7 @@ import traceback
 import logging
 import pandas as pd
 import urllib.request
-from utils import postgres_connection
+import utils
 
 
 # url = "https://raw.githubusercontent.com/dogukannulu/datasets/master/Churn_Modelling.csv"
@@ -28,7 +28,7 @@ def create_postgres_table(file_name:str):
     """
     Create the Postgres table with a desired schema
     """
-    conn = postgres_connection()
+    conn = utils.postgres_connection()
     cur = conn.cursor()
 
     try:
@@ -50,7 +50,7 @@ def write_to_postgres(file_name:str):
     Args:
         file_name (str): name of the file to be written to Postgres
     """
-    conn = postgres_connection()
+    conn = utils.postgres_connection()
     cur = conn.cursor()
 
     df = pd.read_csv(f'data/{file_name}.csv')
